@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Joseph Fabian Ayitevi — Technology, Capital and Strategy</title>
+<meta name="description" content="Ghanaian entrepreneur and executive working across AI, mining and trade, energy, healthcare and agriculture. Based in Accra.">
+<meta property="og:title" content="Joseph Fabian Ayitevi">
+<meta property="og:description" content="Connecting Technology, Capital and Strategy to Opportunity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0a1220;--ink2:#121c2e;--ivory:#f5f0e4;--paper:#fbf8f1;--stone:#8b8778;--line:#d9d2bf;--gold:#b8995a;--em:#0e5a45;--em2:#14735a;
+--serif:'Fraunces',Georgia,'Times New Roman',serif;--sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--ivory);color:#1b2233;font:17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0;letter-spacing:-.01em}
+p{margin:0 0 1em;max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.dark{background:var(--ink);color:#e9e5d8}
+.dark .muted{color:#a9aab0}.muted{color:#5b5f6a}
+section{padding:96px 0}
+h2{font-size:clamp(34px,5vw,58px);max-width:18ch}
+.lede{font-size:19px;margin-top:22px}
+/* nav */
+header{position:fixed;top:0;left:0;right:0;z-index:20;padding-top:env(safe-area-inset-top,0px);background:rgba(10,18,32,.92);backdrop-filter:blur(8px);border-bottom:1px solid #243049}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--serif);font-size:22px;color:var(--gold);text-decoration:none;letter-spacing:.04em}
+nav{display:flex;gap:26px;font-size:14px}
+nav a{color:#cfcbbd;text-decoration:none;background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 1px no-repeat;transition:background-size .25s}
+nav a:hover{background-size:100% 1px;color:#fff}
+@media(max-width:860px){nav{display:none}}
+/* buttons */
+.btn{display:inline-block;padding:14px 24px;border-radius:2px;text-decoration:none;font-weight:600;font-size:15px;border:1px solid transparent;cursor:pointer;font-family:var(--sans);transition:background .2s,color .2s}
+.btn.em{background:var(--em);color:#fff}.btn.em:hover{background:var(--em2)}
+.btn.ghost{border-color:#4a5772;color:#e9e5d8;background:none}.btn.ghost:hover{border-color:var(--gold);color:#fff}
+.btn.line{border-color:#1b2233;background:none}.btn.line:hover{background:#1b2233;color:#fff}
+/* hero */
+.hero{min-height:100svh;padding:140px 0 70px;display:flex;align-items:flex-end;position:relative;overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:end}
+.hero h1{font-size:clamp(44px,7.4vw,104px)}
+.hero p.sub{font-size:19px;margin:30px 0 34px;color:#bfc1c8}
+.cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.wa-quiet{font-size:14px;color:#a9aab0}
+.mono{position:relative;aspect-ratio:4/5;border:1px solid #2b3956;display:flex;align-items:flex-end;padding:26px;background:linear-gradient(160deg,#101a2d,#0a1220)}
+.mono b{font-family:var(--serif);font-weight:400;font-size:clamp(90px,14vw,190px);line-height:.8;color:var(--gold);position:absolute;top:26px;left:22px}
+.mono small{color:#a9aab0;font-size:13px;line-height:1.5}
+.mono svg{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
+.ph-note{font-size:12px;color:#6f7a90;margin-top:8px}
+@media(max-width:860px){.hero .grid{grid-template-columns:1fr}.mono{aspect-ratio:16/10}.hero{padding-top:110px}}
+/* intersection */
+.inter{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:56px;align-items:start}
+.orbit{position:relative;aspect-ratio:1;max-width:520px;width:100%}
+.orbit svg{position:absolute;inset:0;width:100%;height:100%}
+.orbit .core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:26%;aspect-ratio:1;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;text-align:center;font-family:var(--serif);font-size:15px;line-height:1.2;color:var(--gold);background:var(--ink)}
+.node{position:absolute;transform:translate(-50%,-50%);width:27%;min-height:64px;padding:10px 8px;font:500 13px/1.25 var(--sans);text-align:center;background:var(--paper);border:1px solid var(--line);color:#1b2233;cursor:pointer;border-radius:2px;transition:background .2s,color .2s,border-color .2s}
+.node:hover{border-color:var(--em)}
+.node[aria-pressed=true]{background:var(--em);color:#fff;border-color:var(--em)}
+.panel{background:var(--paper);border-left:3px solid var(--em);padding:30px 32px}
+.panel h3{font-size:30px;margin-bottom:14px}
+.panel h4{font:600 13px var(--sans);margin:20px 0 6px;color:var(--em)}
+.panel ul{margin:0;padding-left:18px}
+@media(max-width:860px){.inter{grid-template-columns:1fr}.orbit{aspect-ratio:auto;max-width:none;display:grid;gap:8px}.orbit svg,.orbit .core{display:none}.node{position:static;transform:none;width:100%;text-align:left;padding:14px 16px;font-size:15px}}
+/* profile */
+.profile{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:48px}
+.snap{border-top:1px solid var(--line)}
+.snap div{display:grid;grid-template-columns:140px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
+.snap dt{color:var(--stone)}.snap dd{margin:0}
+@media(max-width:860px){.profile{grid-template-columns:1fr}.snap div{grid-template-columns:1fr;gap:2px}}
+/* board */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:48px;border-top:1px solid #2b3956}
+.three>div{padding:28px 28px 28px 0;border-right:1px solid #2b3956;padding-left:28px}
+.three>div:first-child{padding-left:0}.three>div:last-child{border:0}
+.three h3{font-size:24px;margin-bottom:10px}
+.tag{display:inline-block;font-size:12px;border:1px solid #4a5772;padding:2px 8px;margin-bottom:12px;color:#a9aab0}
+@media(max-width:860px){.three{grid-template-columns:1fr}.three>div{border:0;border-bottom:1px solid #2b3956;padding:24px 0}}
+/* experience */
+.exp{margin-top:48px;border-top:1px solid #1b2233}
+.exp article{display:grid;grid-template-columns:230px 1fr 1fr;gap:28px;padding:26px 0;border-bottom:1px solid var(--line)}
+.exp h3{font-size:24px}.exp .when{font-size:13px;color:var(--stone);margin-top:4px}
+.exp p{font-size:15.5px;margin:0}
+.exp .l{font-weight:600;font-size:13px;color:var(--em);display:block;margin-bottom:2px}
+@media(max-width:860px){.exp article{grid-template-columns:1fr;gap:12px}}
+/* timeline */
+.tl{margin-top:48px;border-left:1px solid #2b3956;padding-left:34px}
+.tl article{position:relative;padding-bottom:40px}
+.tl article::before{content:"";position:absolute;left:-39px;top:10px;width:9px;height:9px;border-radius:50%;background:var(--gold)}
+.tl h3{font-size:26px}
+.st{display:inline-block;font-size:12.5px;font-weight:600;padding:3px 10px;border:1px solid var(--gold);color:var(--gold);margin:8px 0 10px}
+.st.signed{background:var(--gold);color:var(--ink)}
+.tl p{color:#bfc1c8;font-size:16px}
+/* articles */
+.arts{display:grid;grid-template-columns:1fr 1fr;gap:0 56px;margin-top:40px}
+.arts article{padding:22px 0;border-top:1px solid var(--line)}
+.arts h3{font-size:24px;max-width:26ch}
+.arts .d{font-size:13px;color:var(--stone);margin-top:10px}
+@media(max-width:860px){.arts{grid-template-columns:1fr}}
+/* desk */
+form{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px}
+.f{display:flex;flex-direction:column;gap:6px}.f.full{grid-column:1/-1}
+label{font-size:14px;font-weight:600}
+label i{font-weight:400;color:var(--stone);font-style:normal}
+input,select,textarea{font:inherit;font-size:16px;padding:12px;border:1px solid #b9b29b;background:#fff;color:#1b2233;border-radius:2px;width:100%}
+textarea{min-height:110px;resize:vertical}
+.err{color:#9b1c1c;font-size:13px;min-height:1em}
+.sum{grid-column:1/-1;background:var(--paper);border:1px solid var(--line);padding:22px}
+.sum pre{white-space:pre-wrap;font:15px/1.6 var(--sans);margin:0 0 16px}
+.note{font-size:14px;color:#5b5f6a}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;font-size:14px;z-index:40}
+@media(max-width:700px){form{grid-template-columns:1fr}}
+footer{padding:48px 0 90px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between;font-size:14px;color:#a9aab0}
+footer .t{font-family:var(--serif);font-size:20px;color:var(--gold)}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--em);color:#fff;padding:12px 18px;border-radius:30px;text-decoration:none;font-weight:600;font-size:14px;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#top" aria-label="Joseph Fabian Ayitevi, home">JFA</a>
+<nav aria-label="Primary"><a href="#intersection">Strategic Intersection</a><a href="#profile">Profile</a><a href="#board">Board &amp; Advisory</a><a href="#experience">Experience</a><a href="#engagements">Engagements</a><a href="#insights">Insights</a><a href="#desk">Opportunity Desk</a></nav></div></header>
+
+<main id="top">
+<section class="hero dark"><div class="wrap grid">
+<div>
+<h1>Connecting Technology, Capital and Strategy to Opportunity.</h1>
+<p class="sub">Joseph Fabian Ayitevi is a Ghanaian entrepreneur and executive with more than 21 years of experience across AI, mining and international trade, energy, healthcare and agriculture. He builds partnerships that create practical value for Ghana and Africa.</p>
+<div class="cta"><a class="btn em" href="#desk" data-cat="International investment or business partnership">Discuss a Strategic Opportunity</a><a class="btn ghost" href="#profile">Explore My Executive Profile</a></div>
+<p class="wa-quiet" style="margin-top:18px">Prefer a direct message? <a data-wa="Hello Joseph, I found your website and would like to start a conversation." href="#">Message on WhatsApp</a></p>
+</div>
+<div><div class="mono" role="img" aria-label="Typographic placeholder for portrait">
+<svg viewBox="0 0 200 250" fill="none" stroke="#b8995a" stroke-width=".4" aria-hidden="true"><circle cx="100" cy="125" r="70"/><circle cx="100" cy="125" r="40"/><path d="M30 125h140M100 55v140M50 75l100 100M150 75L50 175"/></svg>
+<b>JFA</b><small>Accra, Ghana<br>AI · Mining &amp; Trade · Energy &amp; Health · Agriculture</small></div>
+<div class="ph-note">Portrait placeholder. Replace with an approved photograph.</div></div>
+</div></section>
+
+<section id="intersection"><div class="wrap">
+<h2>Six domains. One strategic perspective.</h2>
+<p class="lede muted">Experience across several sectors can reveal connections that are hard to see from inside one. Select a domain to see the experience behind it.</p>
+<div class="inter">
+<div class="orbit" id="orbit" role="group" aria-label="Six domains">
+<svg viewBox="0 0 100 100" fill="none" stroke="#b8995a" stroke-width=".25" aria-hidden="true"><circle cx="50" cy="50" r="38"/><path d="M50 12L50 50M83 31L50 50M83 69L50 50M50 88L50 50M17 69L50 50M17 31L50 50"/></svg>
+<div class="core">Strategic<br>Intersection</div>
+</div>
+<div class="panel" id="dpanel" aria-live="polite"></div>
+</div></div></section>
+
+<section id="profile" style="background:var(--paper)"><div class="wrap">
+<h2>A Ghanaian executive with a cross-sector view.</h2>
+<div class="profile">
+<div><p class="lede" style="margin-top:0">Joseph leads businesses across technology, mining, energy, healthcare and agriculture. His training pairs international business and law with applied AI and machine learning.</p>
+<p>His work is shaped by one question: where does technology, capital and regulatory know-how meet a real need in Ghana and across Africa?</p>
+<p>His direction is to support responsible innovation, build strategic partnerships, attract productive international investment and contribute to Ghana's economic development.</p></div>
+<dl class="snap" style="margin:0">
+<div><dt>Leadership</dt><dd>CEO and Founder, Cognitive AI Technologies Ltd (2024–present)<br>Managing Director, AFA-EF Mining Ltd (2025–present)<br>CEO, Sunbio2 Ghana Ltd (2021–present)<br>Country Director, PROFOH Ghana (2017–present)<br>CEO, Sankofa International Organic Farms (2014–present)</dd></div>
+<div><dt>Also</dt><dd>CEO, Cynel Immigration Services Ltd · CEO, Product Link International (GH) Ltd · Board Chairman, Silvercrown Commercial Limited</dd></div>
+<div><dt>Education</dt><dd>MSc International Business with Law, University of Salford (2020–21)<br>Postgraduate Degree in AI and Machine Learning, Texas McCombs via Great Learning (2023–24)<br>Generative AI for NLP, Great Learning (2024)</dd></div>
+<div><dt>Recognition</dt><dd>African AI Excellence Award for Innovation and Leadership, 2024<br>Most Respected CEO in AI and Machine Learning, Ghana Industry CEO Awards 2024</dd></div>
+<div><dt>Speaking</dt><dd>Edtech Monday, Citi FM / MEST Africa, on AI and machine learning in education</dd></div>
+</dl></div></div></section>
+
+<section id="board" class="dark"><div class="wrap">
+<h2>Where this experience can create value.</h2>
+<p class="lede muted">Joseph is open to advisory and board conversations. The three columns separate what he has done from what he is seeking.</p>
+<div class="three">
+<div><span class="tag">Documented</span><h3>Executive operating experience</h3><p class="muted">Running companies in AI, gold aggregation and export, medical oxygen and renewable energy, organic farming and immigration services, including regulatory coordination and international trade relationships.</p></div>
+<div><span class="tag">Documented</span><h3>Governance-related experience</h3><p class="muted">Board Chairman of Silvercrown Commercial Limited. Country Director of PROFOH Ghana, working with institutions, NGOs and donors.</p></div>
+<div><span class="tag">Prospective</span><h3>Where he could contribute</h3><p class="muted">Technology strategy and responsible AI, digital transformation, international partnerships and market expansion, cross-sector collaboration, sustainable development. No appointments are claimed here.</p></div>
+</div>
+<p style="margin-top:40px"><a class="btn em" href="#desk" data-cat="Board or governance opportunity">Discuss a Board or Advisory Opportunity</a></p>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Selected experience.</h2>
+<p class="lede muted">Scope and responsibilities as documented. No performance figures are shown because none have been verified for publication.</p>
+<div class="exp">
+<article><div><h3>Cognitive AI Technologies</h3><div class="when">CEO and Founder, 2024–present</div></div><p><span class="l">Scope</span>AI solutions for African markets: agricultural yield prediction, financial technology, education, and technology strategy.</p><p><span class="l">Lesson</span>Technology works when it is fitted to local conditions.</p></article>
+<article><div><h3>AFA-EF Mining</h3><div class="when">Managing Director, 2025–present</div></div><p><span class="l">Scope</span>Gold buying, aggregation and export under Ghana Gold Board processes, with ERP and compliance tooling and international buyer relationships.</p><p><span class="l">Lesson</span>Value in commodities depends as much on compliance and logistics as on the resource.</p></article>
+<article><div><h3>Sunbio2 Ghana</h3><div class="when">CEO, 2021–present</div></div><p><span class="l">Scope</span>Sustainable energy projects and Pressure Swing Adsorption oxygen generators for medical settings, with medical-device regulatory compliance.</p><p><span class="l">Lesson</span>Essential infrastructure joins energy and health.</p></article>
+<article><div><h3>PROFOH Ghana</h3><div class="when">Country Director, 2017–present</div></div><p><span class="l">Scope</span>Partnerships with government, NGOs and communities; programme coordination, capacity building, health education and donor relationships.</p><p><span class="l">Lesson</span>Institutional trust is built slowly.</p></article>
+<article><div><h3>Sankofa International Organic Farms</h3><div class="when">CEO, 2014–present</div></div><p><span class="l">Scope</span>Organic farming, product development and market reach.</p><p><span class="l">Lesson</span>First-hand agricultural experience grounds his agri-tech work.</p></article>
+</div></div></section>
+
+<section id="engagements" class="dark"><div class="wrap">
+<h2>International engagements, with their actual status.</h2>
+<p class="lede muted">Each entry states what happened. A meeting is not a deal, and nothing below is presented as completed unless it says so.</p>
+<div class="tl">
+<article><h3>Washington, D.C. — April 2025</h3><span class="st">Meetings held</span><p>Visit during the World Bank and IMF Spring Meetings. Discussions on mining, critical minerals, AI and digital finance, with expressions of interest from several parties. No investment is reported as completed.</p></article>
+<article><h3>Ghana business visit — June to July 2025</h3><span class="st">Opportunity explored</span><p>Joseph helped arrange a visit by a Miami-based delegation through AFA-EF Mining to explore a potential partnership around a gold mine, including meetings and on-site sampling. The partnership is not confirmed.</p></article>
+<article><h3>TICAD9 outcomes — August 2025</h3><span class="st">Outcomes report</span><p>Joseph's report on Ghana-related announcements from TICAD9 in Yokohama. It is a report on published outcomes, not a claim of attendance.</p></article>
+<article><h3>AFA-EF Mining and The Bullion Mart Corporation — 17 April 2026</h3><span class="st signed">Agreements signed</span><p>A Strategic Partnership Agreement and a Sale and Purchase Agreement for doré bars with a Toronto-based company, as announced by AFA-EF Mining. Operational results are not reported here.</p></article>
+</div></div></section>
+
+<section id="insights"><div class="wrap">
+<h2>Insights.</h2>
+<p class="lede muted">Four topics Joseph intends to write about. None is published yet.</p>
+<div class="arts">
+<article><h3>AI is not just a technology decision. It is a leadership decision.</h3><div class="d">Draft topic</div></article>
+<article><h3>What makes an international partnership worth pursuing?</h3><div class="d">Draft topic</div></article>
+<article><h3>Ghana's opportunity is not only what it produces, but what it can build around it.</h3><div class="d">Draft topic</div></article>
+<article><h3>What cross-sector leadership teaches us about complex business problems.</h3><div class="d">Draft topic</div></article>
+</div></div></section>
+
+<section id="desk" style="background:var(--paper)"><div class="wrap">
+<h2>Let's explore the opportunity.</h2>
+<p class="lede muted">Tell Joseph what you have in mind. You review a prepared WhatsApp message before anything is opened. Opening WhatsApp does not send it; you press send there.</p>
+<form id="f" novalidate>
+<div class="f full"><label for="cat">What kind of opportunity? <i>(required)</i></label><select id="cat" required><option value="">Select one</option><option>Board or governance opportunity</option><option>Government or policy advisory</option><option>International organisation or development partnership</option><option>Executive consulting</option><option>AI or digital transformation</option><option>International investment or business partnership</option><option>Mining, gold trade or commodities</option><option>Speaking or institutional engagement</option><option>Other strategic opportunity</option></select><div class="err" id="e-cat"></div></div>
+<div class="f"><label for="name">Your name <i>(required)</i></label><input id="name" autocomplete="name"><div class="err" id="e-name"></div></div>
+<div class="f"><label for="org">Organisation <i>(optional)</i></label><input id="org" autocomplete="organization"></div>
+<div class="f"><label for="email">Professional email <i>(required)</i></label><input id="email" type="email" autocomplete="email"><div class="err" id="e-email"></div></div>
+<div class="f"><label for="ctry">Country or market <i>(optional)</i></label><input id="ctry" autocomplete="country-name"></div>
+<div class="f full hidden" id="xwrap"><label for="x" id="xl"></label><input id="x"></div>
+<div class="f full"><label for="msg">Brief description <i>(required)</i></label><textarea id="msg"></textarea><div class="err" id="e-msg"></div></div>
+<div class="f full"><label for="when">Requested consultation time, Africa/Accra <i>(optional)</i></label><input id="when" type="datetime-local"><span class="note">This is a request, not a confirmed appointment. Joseph's availability is not shown on this site.</span></div>
+<div class="f full"><button class="btn em" type="submit" style="width:fit-content">Review my message</button></div>
+<div class="sum hidden" id="sum" tabindex="-1"><h3 style="font-size:24px;margin-bottom:12px">Review before you continue</h3><pre id="pre"></pre>
+<div class="cta"><a class="btn em" id="go" target="_blank" rel="noopener" href="#">Continue on WhatsApp</a><button class="btn line" type="button" id="copy">Copy message</button></div>
+<p class="note" style="margin-top:14px">Nothing has been sent. If WhatsApp does not open, copy the message and send it to +233 24 776 0892.</p></div>
+</form></div></section>
+</main>
+
+<footer class="dark"><div class="wrap"><div><div class="t">Joseph Fabian Ayitevi</div><div>Think Across Borders. Build Beyond Boundaries.</div></div><div>Accra, Ghana<br><a data-wa="Hello Joseph, I would like to get in touch." href="#">WhatsApp +233 24 776 0892</a></div></div></footer>
+<a class="fab" data-wa="Hello Joseph, I would like to get in touch." href="#">WhatsApp</a>
+
+<script>
+const NUM='233247760892';
+const waURL=t=>'https://wa.me/'+NUM+'?text='+encodeURIComponent(t);
+document.querySelectorAll('[data-wa]').forEach(a=>{a.href=waURL(a.dataset.wa);a.target='_blank';a.rel='noopener'});
+
+const D=[
+{n:'AI and digital transformation',p:'AI creates value when it is fitted to local data, infrastructure and users, and governed responsibly.',e:['CEO and Founder, Cognitive AI Technologies','AI/ML postgraduate training (Texas McCombs via Great Learning)','Odoo ERP and AI dashboards at AFA-EF Mining'],a:['Agricultural yield prediction','AI in financial services and education'],o:'Technology companies, financial institutions, education providers',c:'AI or digital transformation',x:[28,16]},
+{n:'Mining, gold and international trade',p:'Value in commodities depends on compliance, logistics and the quality of the buyer relationship.',e:['Managing Director, AFA-EF Mining','Gold aggregation, export documentation and regulatory coordination','Agreements with The Bullion Mart Corporation, 17 April 2026'],a:['Export structuring','Offtake and partnership discussions'],o:'Refiners, bullion buyers, mining partners',c:'Mining, gold trade or commodities',x:[80,16]},
+{n:'International business and investment partnerships',p:'A partnership is worth pursuing when it has clear commercial logic and credible counterparties.',e:['MSc International Business with Law, Salford','Washington, D.C. engagements, April 2025','Facilitated Ghana visit, June to July 2025'],a:['Introductions and market entry','Partnership structuring'],o:'Investors, corporates, trade bodies',c:'International investment or business partnership',x:[92,50]},
+{n:'Energy, healthcare and critical infrastructure',p:'Reliable energy and medical infrastructure are preconditions for other development.',e:['CEO, Sunbio2 Ghana (medical oxygen, renewable energy)','Country Director, PROFOH Ghana'],a:['Medical oxygen supply','Health programmes and partnerships'],o:'Health institutions, development partners, energy firms',c:'International organisation or development partnership',x:[80,84]},
+{n:'Agriculture and sustainable development',p:'Agriculture links rural livelihoods, exports and technology.',e:['CEO, Sankofa International Organic Farms','Yield-prediction work at Cognitive AI Technologies'],a:['Organic production','Agri-tech applications'],o:'Agribusiness, funders, agri-tech firms',c:'Other strategic opportunity',x:[28,84]},
+{n:'Governance, institutions and economic strategy',p:'Institutional trust and sound governance determine whether partnerships last.',e:['Board Chairman, Silvercrown Commercial Limited','Country Director, PROFOH Ghana'],a:['Advisory on governance and strategy','Public-private collaboration'],o:'Boards, public bodies, development institutions',c:'Board or governance opportunity',x:[16,50]}];
+const orbit=document.getElementById('orbit'),panel=document.getElementById('dpanel');
+const pos=[[50,10],[85,30],[85,70],[50,90],[15,70],[15,30]];
+D.forEach((d,i)=>{const b=document.createElement('button');b.className='node';b.type='button';b.textContent=d.n;b.setAttribute('aria-pressed','false');b.style.left=pos[i][0]+'%';b.style.top=pos[i][1]+'%';b.onclick=()=>show(i);orbit.appendChild(b)});
+function show(i){const d=D[i];orbit.querySelectorAll('.node').forEach((b,j)=>b.setAttribute('aria-pressed',j===i));
+panel.innerHTML=`<h3>${d.n}</h3><p>${d.p}</p><h4>Experience</h4><ul>${d.e.map(x=>`<li>${x}</li>`).join('')}</ul><h4>Possible applications</h4><ul>${d.a.map(x=>`<li>${x}</li>`).join('')}</ul><h4>Relevant to</h4><p>${d.o}</p><a class="btn em" href="#desk" data-cat="${d.c}">Discuss this area</a>`}
+show(0);
+
+const extra={'Board or governance opportunity':'Type of board or body <i>(optional)</i>','Mining, gold trade or commodities':'Commodity and approximate scale <i>(optional)</i>','AI or digital transformation':'Sector or use case <i>(optional)</i>','International investment or business partnership':'Sector and stage of discussions <i>(optional)</i>','Speaking or institutional engagement':'Event and date <i>(optional)</i>'};
+const $=id=>document.getElementById(id);
+function setCat(c){$('cat').value=c;cat()}
+function cat(){const l=extra[$('cat').value];$('xwrap').classList.toggle('hidden',!l);if(l)$('xl').innerHTML=l}
+$('cat').onchange=cat;
+document.addEventListener('click',e=>{const a=e.target.closest('[data-cat]');if(a){setCat(a.dataset.cat)}});
+
+function toast(t){const e=document.createElement('div');e.className='toast';e.setAttribute('role','status');e.textContent=t;document.body.appendChild(e);setTimeout(()=>e.remove(),2500)}
+function msg(){const g=id=>$(id).value.trim();const L=['Hello Joseph, I found your website and would like to discuss an opportunity.','','Type: '+g('cat'),'Name: '+g('name')];
+if(g('org'))L.push('Organisation: '+g('org'));L.push('Email: '+g('email'));if(g('ctry'))L.push('Country/market: '+g('ctry'));
+if(g('x')&&!$('xwrap').classList.contains('hidden'))L.push($('xl').textContent.replace(/ \(optional\)/,'')+': '+g('x'));
+L.push('','About the opportunity:',g('msg'));
+if(g('when'))L.push('','Requested time (Africa/Accra, not confirmed): '+g('when').replace('T',' '));return L.join('\n')}
+$('f').addEventListener('submit',e=>{e.preventDefault();let ok=true;
+const chk=(id,bad,m)=>{$('e-'+id).textContent=bad?m:'';if(bad)ok=false};
+chk('cat',!$('cat').value,'Choose a type of opportunity.');chk('name',!$('name').value.trim(),'Enter your name.');
+chk('email',!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($('email').value.trim()),'Enter a valid email address.');chk('msg',!$('msg').value.trim(),'Add a short description.');
+if(!ok)return;const m=msg();$('pre').textContent=m;$('go').href=waURL(m);$('sum').classList.remove('hidden');$('sum').focus()});
+$('copy').onclick=async()=>{const m=$('pre').textContent;try{await navigator.clipboard.writeText(m);toast('Message copied')}catch(_){const r=document.createRange();r.selectNodeContents($('pre'));const s=getSelection();s.removeAllRanges();s.addRange(r);toast('Select and copy the message above')}};
+</script>
+</body>
+</html>
