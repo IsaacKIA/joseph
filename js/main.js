@@ -713,10 +713,10 @@
 
       // Email mailto fallback with placeholder
       if (emailFallbackBtn) {
-        const emailPlaceholder = 'joseph-email-placeholder@example.com';
+        const emailAddress = 'josephfabian48@gmail.com';
         const mailtoSubject = encodeURIComponent('Opportunity Inquiry: ' + getVal('opportunityCategory'));
         const mailtoBody = encodeURIComponent(formattedMessage);
-        emailFallbackBtn.href = 'mailto:' + emailPlaceholder + '?subject=' + mailtoSubject + '&body=' + mailtoBody;
+        emailFallbackBtn.href = 'mailto:' + emailAddress + '?subject=' + mailtoSubject + '&body=' + mailtoBody;
       }
 
       summaryBox.classList.remove('hidden');

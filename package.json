@@ -1,0 +1,9 @@
+{
+  "name": "joseph-fabian-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Executive portfolio and commercial dossier for Joseph Fabian Ayitevi",
+  "scripts": {
+    "start": "node serve.js"
+  }
+}
